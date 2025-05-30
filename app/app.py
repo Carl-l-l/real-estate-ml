@@ -3,16 +3,24 @@ import pandas as pd
 import logging
 from flask import Flask, request, jsonify
 
-ready_flag = False # Track when the app is ready for requests during init
+model = None
 
+# Init logging
 logger = logging.getLogger(__name__)
 logging.basicConfig(filename="app/app.log", level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
-app = Flask(__name__)
 
 # Load trained lr model
-model = joblib.load('ml/models/linear_regression_real_estate_model.pkl')
+def load_model(model_path='ml/models/linear_regression_real_estate_model.pkl'):
+    model = joblib.load(model_path)
+    logger.info("Model loaded successfully.")
+    return model
+model = load_model()
 
+# Init Flask app
+app = Flask(__name__)
+
+# Controllers
 @app.route('/health', methods=['GET'])
 def get_health():
     """
@@ -27,7 +35,7 @@ def post_predict():
     Expects a JSON payload with the required features.
     Returns a prediction based on the loaded model.
     """
-    if not ready_flag:
+    if not model:
         logger.error("Service not ready to handle requests")
         return jsonify({"error": "Service not ready"}), 503
 
@@ -53,7 +61,6 @@ def post_predict():
     
     # Make prediction
     prediction = model.predict(data_df)
-    
     logger.info(f"Received data: {data}, Prediction: {prediction[0]}")
 
     return jsonify({
@@ -63,11 +70,10 @@ def post_predict():
 
 if __name__ == '__main__':
     try:
-        ready_flag = True 
         logger.info("Starting the Flask app...")
         app.run(port=8000, debug=True)
         logger.info("Flask app started successfully.")
+        
     except Exception as e:
         print(f"Error starting the app: {e}")
-        ready_flag = False
         raise RuntimeError("Woops, failed to start the app") from e

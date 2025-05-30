@@ -9,3 +9,109 @@
 2025-05-30 16:13:23,876 - __main__ - INFO - Starting the Flask app...
 2025-05-30 16:13:23,898 - werkzeug - WARNING -  * Debugger is active!
 2025-05-30 16:13:23,904 - werkzeug - INFO -  * Debugger PIN: 198-729-749
+2025-05-30 17:31:27,456 - app - INFO - Model loaded successfully.
+2025-05-30 17:31:27,456 - app - ERROR - Service not ready to handle requests
+2025-05-30 17:32:37,410 - app.app - INFO - Model loaded successfully.
+2025-05-30 17:32:37,411 - app.app - ERROR - Service not ready to handle requests
+2025-05-30 17:34:05,064 - app.app - INFO - Model loaded successfully.
+2025-05-30 17:34:05,069 - app.app - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "/Users/carlleeladefoged/.pyenv/versions/3.12.7/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carlleeladefoged/.pyenv/versions/3.12.7/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carlleeladefoged/.pyenv/versions/3.12.7/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carlleeladefoged/.pyenv/versions/3.12.7/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: post_predict() missing 1 required positional argument: 'data'
+2025-05-30 17:34:20,126 - __main__ - INFO - Model loaded successfully.
+2025-05-30 17:34:20,126 - __main__ - INFO - Starting the Flask app...
+2025-05-30 17:34:20,156 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-30 17:34:20,156 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-30 17:34:20,157 - werkzeug - INFO -  * Restarting with stat
+2025-05-30 17:34:21,142 - __main__ - INFO - Model loaded successfully.
+2025-05-30 17:34:21,142 - __main__ - INFO - Starting the Flask app...
+2025-05-30 17:34:21,162 - werkzeug - WARNING -  * Debugger is active!
+2025-05-30 17:34:21,173 - werkzeug - INFO -  * Debugger PIN: 198-729-749
+2025-05-30 17:34:23,712 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 17:34:23] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-05-30 17:34:33,271 - werkzeug - INFO -  * Detected change in '/Users/carlleeladefoged/Documents/Programmering/real-estate-ml/app/app.py', reloading
+2025-05-30 17:34:33,367 - werkzeug - INFO -  * Restarting with stat
+2025-05-30 17:34:34,489 - __main__ - INFO - Model loaded successfully.
+2025-05-30 17:34:34,489 - __main__ - INFO - Starting the Flask app...
+2025-05-30 17:34:34,511 - werkzeug - WARNING -  * Debugger is active!
+2025-05-30 17:34:34,518 - werkzeug - INFO -  * Debugger PIN: 198-729-749
+2025-05-30 17:34:36,688 - __main__ - INFO - Model loaded successfully.
+2025-05-30 17:34:36,688 - __main__ - INFO - Starting the Flask app...
+2025-05-30 17:34:36,713 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-30 17:34:36,713 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-30 17:34:36,714 - werkzeug - INFO -  * Restarting with stat
+2025-05-30 17:34:37,659 - __main__ - INFO - Model loaded successfully.
+2025-05-30 17:34:37,659 - __main__ - INFO - Starting the Flask app...
+2025-05-30 17:34:37,679 - werkzeug - WARNING -  * Debugger is active!
+2025-05-30 17:34:37,693 - werkzeug - INFO -  * Debugger PIN: 198-729-749
+2025-05-30 17:34:40,718 - werkzeug - INFO -  * Detected change in '/Users/carlleeladefoged/Documents/Programmering/real-estate-ml/app/app.py', reloading
+2025-05-30 17:34:40,834 - werkzeug - INFO -  * Restarting with stat
+2025-05-30 17:34:41,778 - __main__ - INFO - Model loaded successfully.
+2025-05-30 17:34:41,778 - __main__ - INFO - Starting the Flask app...
+2025-05-30 17:34:41,801 - werkzeug - WARNING -  * Debugger is active!
+2025-05-30 17:34:41,808 - werkzeug - INFO -  * Debugger PIN: 198-729-749
+2025-05-30 17:34:44,576 - __main__ - INFO - Model loaded successfully.
+2025-05-30 17:34:44,576 - __main__ - INFO - Starting the Flask app...
+2025-05-30 17:34:44,601 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-30 17:34:44,601 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-30 17:34:44,602 - werkzeug - INFO -  * Restarting with stat
+2025-05-30 17:34:45,515 - __main__ - INFO - Model loaded successfully.
+2025-05-30 17:34:45,515 - __main__ - INFO - Starting the Flask app...
+2025-05-30 17:34:45,534 - werkzeug - WARNING -  * Debugger is active!
+2025-05-30 17:34:45,540 - werkzeug - INFO -  * Debugger PIN: 198-729-749
+2025-05-30 17:34:45,617 - __main__ - ERROR - Service not ready to handle requests
+2025-05-30 17:34:45,617 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 17:34:45] "[35m[1mPOST /predict HTTP/1.1[0m" 503 -
+2025-05-30 17:34:50,256 - __main__ - ERROR - Service not ready to handle requests
+2025-05-30 17:34:50,256 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 17:34:50] "[35m[1mPOST /predict HTTP/1.1[0m" 503 -
+2025-05-30 17:34:51,070 - __main__ - ERROR - Service not ready to handle requests
+2025-05-30 17:34:51,071 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 17:34:51] "[35m[1mPOST /predict HTTP/1.1[0m" 503 -
+2025-05-30 17:34:51,955 - __main__ - ERROR - Service not ready to handle requests
+2025-05-30 17:34:51,956 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 17:34:51] "[35m[1mPOST /predict HTTP/1.1[0m" 503 -
+2025-05-30 17:34:52,816 - __main__ - ERROR - Service not ready to handle requests
+2025-05-30 17:34:52,816 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 17:34:52] "[35m[1mPOST /predict HTTP/1.1[0m" 503 -
+2025-05-30 17:34:58,664 - werkzeug - INFO -  * Detected change in '/Users/carlleeladefoged/Documents/Programmering/real-estate-ml/app/app.py', reloading
+2025-05-30 17:34:58,765 - werkzeug - INFO -  * Restarting with stat
+2025-05-30 17:34:59,901 - __main__ - INFO - Model loaded successfully.
+2025-05-30 17:34:59,901 - __main__ - INFO - Starting the Flask app...
+2025-05-30 17:34:59,921 - werkzeug - WARNING -  * Debugger is active!
+2025-05-30 17:34:59,928 - werkzeug - INFO -  * Debugger PIN: 198-729-749
+2025-05-30 17:35:02,359 - __main__ - INFO - Model loaded successfully.
+2025-05-30 17:35:02,359 - __main__ - INFO - Starting the Flask app...
+2025-05-30 17:35:02,383 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-30 17:35:02,383 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-30 17:35:02,383 - werkzeug - INFO -  * Restarting with stat
+2025-05-30 17:35:03,380 - __main__ - INFO - Model loaded successfully.
+2025-05-30 17:35:03,380 - __main__ - INFO - Starting the Flask app...
+2025-05-30 17:35:03,401 - werkzeug - WARNING -  * Debugger is active!
+2025-05-30 17:35:03,407 - werkzeug - INFO -  * Debugger PIN: 198-729-749
+2025-05-30 17:35:03,419 - __main__ - INFO - Received data: {'X1 transaction date': 2012.667, 'X2 house age': 20.4, 'X3 distance to the nearest MRT station': 2469.645, 'X4 number of convenience stores': 4, 'X5 latitude': 24.96108, 'X6 longitude': 121.51046}, Prediction: 26.762797121966287
+2025-05-30 17:35:03,420 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 17:35:03] "POST /predict HTTP/1.1" 200 -
+2025-05-30 17:35:04,201 - __main__ - INFO - Received data: {'X1 transaction date': 2012.667, 'X2 house age': 20.4, 'X3 distance to the nearest MRT station': 2469.645, 'X4 number of convenience stores': 4, 'X5 latitude': 24.96108, 'X6 longitude': 121.51046}, Prediction: 26.762797121966287
+2025-05-30 17:35:04,201 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 17:35:04] "POST /predict HTTP/1.1" 200 -
+2025-05-30 17:35:12,303 - app.app - INFO - Model loaded successfully.
+2025-05-30 17:35:12,307 - app.app - ERROR - Service not ready to handle requests
+2025-05-30 17:36:22,887 - app.app - INFO - Model loaded successfully.
+2025-05-30 17:36:22,891 - app.app - ERROR - Service not ready to handle requests
+2025-05-30 17:36:39,270 - app.app - INFO - Model loaded successfully.
+2025-05-30 17:36:39,271 - app.app - INFO - Model loaded successfully.
+2025-05-30 17:36:39,276 - app.app - INFO - Received data: {'X1 transaction date': 2025.1, 'X2 house age': 10, 'X3 distance to the nearest MRT station': 500, 'X4 number of convenience stores': 5, 'X5 latitude': 1.3521, 'X6 longitude': 103.8198}, Prediction: -4778.041453988384
+2025-05-30 17:37:25,239 - app.app - INFO - Model loaded successfully.
+2025-05-30 17:37:25,241 - app.app - INFO - Model loaded successfully.
+2025-05-30 17:37:25,246 - app.app - INFO - Received data: {'X1 transaction date': 2025.1, 'X2 house age': 10, 'X3 distance to the nearest MRT station': 500, 'X4 number of convenience stores': 5, 'X5 latitude': 1.3521, 'X6 longitude': 103.8198}, Prediction: -4778.041453988384
+2025-05-30 17:38:34,150 - app.app - INFO - Model loaded successfully.
+2025-05-30 17:38:34,152 - app.app - INFO - Model loaded successfully.
+2025-05-30 17:38:34,157 - app.app - INFO - Received data: {'X1 transaction date': 2025.1, 'X2 house age': 10, 'X3 distance to the nearest MRT station': 500, 'X4 number of convenience stores': 5, 'X5 latitude': 1.3521, 'X6 longitude': 103.8198}, Prediction: -4778.041453988384
