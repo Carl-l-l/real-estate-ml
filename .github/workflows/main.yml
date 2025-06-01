@@ -24,6 +24,14 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Inject env file
+      run: |
+        touch dbr/.env
+        echo DATABRICKS_SERVER_HOSTNAME=dbc-4df8c6eb-7aad.cloud.databricks.com >> dbr/.env
+        echo DATABRICKS_HTTP_PATH=/sql/1.0/warehouses/c1a3f6df01a4987c >> dbr/.env
+        echo DATABRICKS_ACCESS_TOKEN=${{ secrets.DATABRICKS_ACCESS_TOKEN }} >> dbr/.env
+        cat dbr/.env
+
     - name: Run tests
       run: |
         python -m unittest discover -s tests -p "*.py"

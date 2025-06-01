@@ -57,6 +57,8 @@ def post_predict():
         logger.error(f"Missing features in request: {', '.join(missing_features)}")
         return jsonify({"error": f"Missing features: {', '.join(missing_features)}"}), 400
     
+    # TODO: Null check!
+    
     data_df = pd.DataFrame([data])
     
     # Make prediction
