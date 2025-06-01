@@ -1,13 +1,19 @@
-from real_estate_model import RealEstateModel
+import os
+import sys
+
+# Ensure the app directory is in the Python path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from ml.real_estate_model import RealEstateModel
+
+REAL_ESTATE_DATA_PATH = "data/Real estate.csv"
+TARGET_COLUMN = "Y house price of unit area"
 
 if __name__ == "__main__":
     # Training script for the real estate model
+    model = RealEstateModel(REAL_ESTATE_DATA_PATH)
 
-    real_estate_data_path = "data/Real estate.csv"
-    model = RealEstateModel(real_estate_data_path)
-    target_column = "Y house price of unit area"
-
-    X_train, X_test, y_train, y_test = model.split_data(target_column)
+    X_train, X_test, y_train, y_test = model.split_data(TARGET_COLUMN)
     model.train_model(X_train, y_train)
     model.evaluate_model(X_test, y_test)
     predictions = model.predict(X_test)
