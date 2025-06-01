@@ -8,3 +8,5 @@ matplotlib-inline==0.1.7
 numpy==1.26.4
 pandas==2.2.3
 scikit-learn==1.6.1
+databricks-sql-connector==4.0.3
+python-dotenv==1.1.0
